@@ -1,2 +1,4 @@
-portalocker~=3.2.0
-flask~=3.1.1
+flask
+gunicorn
+gevent
+portalocker
