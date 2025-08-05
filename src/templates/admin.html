@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin • Trip Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="appbar">
+    <div class="nav-left">
+      <a class="brand" href="/">Trip Planner</a>
+    </div>
+    <nav class="topnav">
+      <a href="/">Itinerary</a>
+      <a href="/packing">Packing</a>
+      <a class="active" href="/admin">Admin</a>
+      <a href="/logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container" style="max-width:760px;">
+    <section class="day">
+      <div class="day-head">
+        <div class="date-pill">Add User</div>
+      </div>
+      <form class="form" action="/admin/add_user" method="post">
+        <label>Username
+          <input name="username" required>
+        </label>
+        <label>Password
+          <input type="password" name="password" required>
+        </label>
+        <label>Role
+          <select name="role">
+            <option value="user" selected>User</option>
+            <option value="admin">Admin</option>
+          </select>
+        </label>
+        <div>
+          <button class="btn primary" type="submit">Create user</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="day">
+      <div class="day-head">
+        <div class="date-pill">Manage Users</div>
+      </div>
+      <div class="events">
+        {% for u in users %}
+          <div class="event" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;">
+            <div class="ev-title">{{ u.username }}</div>
+            <div class="ev-meta">role: <strong>{{ u.role }}</strong></div>
+
+            <form action="/admin/reset_password" method="post" class="ev-meta" style="display:flex; gap:8px; align-items:center;">
+              <input type="hidden" name="username" value="{{ u.username }}">
+              <input type="password" name="password" placeholder="new password" required>
+              <button class="btn primary" type="submit">Reset password</button>
+            </form>
+
+            <form action="/admin/delete_user" method="post" onsubmit="return confirm('Delete user {{ u.username }}? This cannot be undone.');">
+              <input type="hidden" name="username" value="{{ u.username }}">
+              <button class="btn" type="submit">Delete user</button>
+            </form>
+          </div>
+        {% endfor %}
+        {% if not users %}
+          <div class="ev-meta">No users yet.</div>
+        {% endif %}
+      </div>
+    </section>
+  </main>
+</body>
+</html>

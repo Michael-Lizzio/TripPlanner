@@ -1,0 +1,203 @@
+{
+  "days": [
+    {
+      "date": "2025-08-07",
+      "events": [
+        {
+          "time": "08:30",
+          "title": "Begin pickups on Long Island",
+          "desc": "",
+          "location": "Long Island, NY",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "09:00",
+          "title": "Drive toward doctor's office",
+          "desc": "",
+          "location": "Toward doctor's office",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "12:15",
+          "title": "Arrive at doctor's appointment",
+          "desc": "",
+          "location": "Doctor's office",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "12:45",
+          "title": "Option A - Depart doctor -> Dingmans Ferry (~2.5 hr)",
+          "desc": "Head straight to the cabin area after the appointment.",
+          "location": "Doctor's office -> Dingmans Ferry, PA",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "15:15",
+          "title": "Option A - Dinner stop",
+          "desc": "Roadside diner or take-out pickup on the way.",
+          "location": "On route to Dingmans Ferry",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "16:15",
+          "title": "Option A - Grocery run for cabin essentials",
+          "desc": "Snacks, breakfast, water, paper goods.",
+          "location": "Nearest supermarket",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "17:00",
+          "title": "Option A - Arrive at cabin; unpack",
+          "desc": "",
+          "location": "Cabin, Dingmans Ferry",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "18:00",
+          "title": "Option A - Settle in, relax",
+          "desc": "",
+          "location": "Cabin",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "12:45",
+          "title": "Option B - Drive to Bear Mountain (~1 hr)",
+          "desc": "",
+          "location": "Doctor's office -> Bear Mountain, NY",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "13:45",
+          "title": "Option B - Short hike at Bear Mountain",
+          "desc": "",
+          "location": "Bear Mountain",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 1,
+          "downs": 0,
+          "vote_users": {
+            "lizzio": "u"
+          }
+        },
+        {
+          "time": "15:15",
+          "title": "Option B - Finish hike; depart for Dingmans Ferry (~1.5 hr)",
+          "desc": "",
+          "location": "Bear Mountain -> Dingmans Ferry, PA",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "17:00",
+          "title": "Option B - Dinner stop on the way",
+          "desc": "",
+          "location": "On route to Dingmans Ferry",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "17:45",
+          "title": "Option B - Grocery run for cabin essentials",
+          "desc": "",
+          "location": "Nearest supermarket",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "18:30",
+          "title": "Option B - Arrive at cabin; unpack",
+          "desc": "",
+          "location": "Cabin, Dingmans Ferry",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "19:30",
+          "title": "Option B - Settle in, relax",
+          "desc": "",
+          "location": "Cabin",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        },
+        {
+          "time": "21:00",
+          "title": "Lights out / sleep",
+          "desc": "",
+          "location": "Cabin",
+          "link": "",
+          "creator": "lizzio",
+          "ups": 0,
+          "downs": 0,
+          "vote_users": {}
+        }
+      ]
+    },
+    {
+      "date": "2025-08-08",
+      "events": []
+    },
+    {
+      "date": "2025-08-09",
+      "events": []
+    },
+    {
+      "date": "2025-08-10",
+      "events": []
+    }
+  ],
+  "packing": {
+    "items": [],
+    "next_id": 2
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sign in • Trip Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-body">
+  <div class="login-card">
+    <h1>Trip Planner</h1>
+    {% if error %}<div class="login-error">{{ error }}</div>{% endif %}
+    <form method="post" class="login-form">
+      <label>Username
+        <input name="username" autocomplete="username" required>
+      </label>
+      <label>Password
+        <input type="password" name="password" autocomplete="current-password" required>
+      </label>
+      <button class="btn primary" type="submit">Sign in</button>
+    </form>
+  </div>
+</body>
+</html>

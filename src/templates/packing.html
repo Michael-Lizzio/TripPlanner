@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Packing • Trip Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="appbar">
+    <div class="nav-left">
+      <a class="brand" href="/">Trip Planner</a>
+    </div>
+    <nav class="topnav">
+      <a href="/">Itinerary</a>
+      <a href="/packing" class="active">Packing</a>
+      {% if is_admin %}<a href="/admin">Admin</a>{% endif %}
+      <a href="/logout">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="day">
+      <div class="day-head" style="flex-wrap:wrap; gap:10px;">
+        <div class="date-pill">Shared Packing List</div>
+        <form id="addShared" class="add-form">
+          <input name="text" placeholder="Add an item…" required>
+          <input name="qty" type="number" min="1" value="1" style="width:70px">
+          <select name="cat">
+            <option value="items">Items</option>
+            <option value="snacks">Snacks</option>
+            <option value="other">Other</option>
+          </select>
+          <button class="btn primary" type="submit">Add</button>
+        </form>
+      </div>
+
+      <div id="pack-root">
+        <!-- categories render here -->
+      </div>
+    </section>
+  </main>
+
+  <dialog id="confirmDlg" class="modal">
+    <div class="form">
+      <h3>Delete item?</h3>
+      <div class="row gap">
+        <button class="btn ghost" onclick="closeConfirm()">Cancel</button>
+        <button class="btn danger" onclick="confirmDelete()">Delete</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="{{ url_for('static', filename='packing.js') }}"></script>
+</body>
+</html>

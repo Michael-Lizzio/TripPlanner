@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Trip Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="appbar">
+    <div class="nav-left">
+      <a class="brand" href="/">Trip Planner</a>
+    </div>
+    <nav class="topnav">
+      <a href="/" class="active">Itinerary</a>
+      <a href="/packing">Packing</a>
+      {% if is_admin %}<a href="/admin">Admin</a>{% endif %}
+      <a href="/logout">Logout</a>
+    </nav>
+  </header>
+
+  <main id="container" class="container"></main>
+
+  <!-- Event Modal -->
+  <dialog id="eventDlg" class="modal">
+    <form method="dialog" id="eventForm" class="form">
+      <h3 id="dlgTitle">Add Event</h3>
+
+      <label>Time
+        <input id="f-time" type="time" required>
+      </label>
+
+      <label>Title
+        <input id="f-title" type="text" placeholder="e.g., Start Pick up" required>
+      </label>
+
+      <label>Description (optional)
+        <textarea id="f-desc" rows="3" placeholder="notes, reminders…"></textarea>
+      </label>
+
+      <label>Location (optional)
+        <input id="f-location" type="text" placeholder="address or place name">
+      </label>
+
+      <label>Link (optional)
+        <input id="f-link" type="url" placeholder="https://…">
+      </label>
+
+      <div class="row gap">
+        <button type="button" class="btn ghost" onclick="closeEventDlg()">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

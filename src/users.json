@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "lizzio",
+      "password_hash": "scrypt:32768:8:1$ooEQxm5MGBiAvHN0$fe32b24be0e9d0738adc1d676df5fedbaabf03e494fb98caa24624679dd42cbea67e7749aaa37d873498e4846bb7390c3d9642bb37704dfeae2a55532a55aead",
+      "role": "admin"
+    },
+    {
+      "username": "Cdm8771",
+      "password_hash": "scrypt:32768:8:1$2pLpv8CgXduDVIhi$688ddc251681c6b9808c0362aead4297b2aa874fe4581e5be7eece3a533ac8422ff4a19959d1b407583ea8dfd69f77a73e035303f6400f65b55606ff76a16b03",
+      "role": "user"
+    },
+    {
+      "username": "tim_C",
+      "password_hash": "scrypt:32768:8:1$LwttWRu4gkI3aODZ$a96debfb8070ad3be8fcc58526588fcefb33a1edd25751f01c7234f58f4d53092a2aaf540f438f853bdaa0de4675f2a31ab787245bee690b2c8f6b66ef297d96",
+      "role": "user"
+    },
+    {
+      "username": "colinbres123",
+      "password_hash": "scrypt:32768:8:1$Bin7RSFwk7RjM5Gy$9dc4ae165f5e93a287905f70922ae17aec6a9af9cb490d6f528a616c377c746bdbef96ed5849d0c6a09c21db7fadc099a52a24c8b37ec15eb9d3246cf5625231",
+      "role": "user"
+    }
+  ]
+}
